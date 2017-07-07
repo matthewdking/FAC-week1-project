@@ -1,5 +1,5 @@
 # week1-Ba6e5-Developers
-[link](https://facn2.github.io/week1-Ba6e5-Developers/)
+[CHECK OUT THE WEBSITE](https://matthewdking.github.io/FAC-week1-project/)
 
 ## WHY?
 
