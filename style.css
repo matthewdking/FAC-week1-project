@@ -9,11 +9,47 @@ html body {
   margin: 0px;
 }
 
-.about-para {
+/* Global layout */
+
+.fullscreen-section {
+  position: relative;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  font-size: 0;
+}
+
+.fullscreen-left {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.left-title-content {
+  font-size: 2rem;
   text-align: center;
-  bottom: 25%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  top: 50%;
   position: absolute;
 }
+
+.fullscreen-right {
+  font-size: 2rem;
+  margin: auto;
+  text-align: center;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+/* Top section */
 
 .top {
   height: 100vh;
@@ -61,11 +97,97 @@ h3 .top-content {
   z-index: 3;
 }
 
+/* About section */
+
+.about-title {
+  background-color: #F35050;
+}
+
+.about-content {
+  top: 10%;
+}
+
+.about-para {
+  text-align: center;
+  bottom: 25%;
+  position: absolute;
+}
+
 .nav-container-about {
   width: 100%;
   position: absolute;
   bottom: 60%;
   z-index:999;
+}
+
+.nav-container-about ul{
+  position: absolute;
+  left: 15%;
+  right: 15%;
+}
+
+.nav-container-about li a {
+  font-size: 0.8em;
+}
+
+/* Team section */
+
+.team-member {
+  text-align: center;
+}
+
+.img-team {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 40px auto;
+}
+
+.team-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  display: block;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: white;
+  color: #3B5998;
+}
+
+/* Github */
+.fa-github {
+  background: white;
+  color: black;
+}
+
+/* Form section */
+
+.button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: black;
+  background-color: #F35050;
+  border-radius: 15px;
+  border: 2px;
 }
 
 .nav-container-form {
@@ -77,94 +199,6 @@ h3 .top-content {
 
 .nav-container-form li a {
   font-size: 0.8em;
-}
-
-.nav-container-about ul{
-
-  position: absolute;
-  left: 15%;
-  right: 15%;
-
-}
-.nav-container-about li a {
-  font-size: 0.8em;
-}
-
-ul {
-  width: 500px;
-  margin: 0 auto;
-  list-style: none;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  font-size: 1.5em;
-  padding-left: 40px;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-}
-
-.about {
-  position: relative;
-  border: none;
-  margin: 0 auto;
-  width: 100%;
-  height: 100vh;
-  font-size: 0;
-}
-
-#about-title {
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-  background-color: #F35050;
-}
-
-#title-content {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  position: absolute;
-}
-
-#about-content {
-  font-size: 2rem;
-  margin: auto;
-  text-align: center;
-  right: 0;
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-  background-color: white;
-  top: 10%;
-}
-
-.watermelon-wrapper {
-  position: relative;
-}
-
-.watermelon-break {
-  position: absolute;
-}
-
-form {
-  margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-}
-
-form div+div {
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 label {
@@ -189,21 +223,37 @@ textarea {
   height: 5em;
 }
 
-.button {
-  padding-left: 90px;
-}
-
 button {
   margin-left: .5em;
 }
 
-.form {
-  position: relative;
-  border: none;
+form {
   margin: 0 auto;
-  width: 100%;
-  height: 100vh;
-  font-size: 0;
+  width: 400px;
+  padding: 1em;
+}
+
+form div+div {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+ul {
+  width: 500px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: 1.5em;
+  padding-left: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 
 .form-title-content {
@@ -211,7 +261,6 @@ button {
   text-align: center;
   margin: 0;
   width: 100%;
-
   top: 50%;
   position: absolute;
 }
@@ -237,18 +286,6 @@ button {
   top: 10%;
 }
 
-.team {
-  position: relative;
-  border: none;
-  margin: 0 auto;
-  width: 100%;
-  height: 100vh;
-  font-size: 0;
-  /*overflow-y: scroll;*/
-  /*padding-right: 17px;*/
-  display: block;
-}
-
 .team-title {
   position: absolute;
   display: inline-block;
@@ -261,12 +298,6 @@ button {
 .contact-wrapper {
   text-align: center;
 }
-
-
-/*.reset-input {
-  margin-bottom: 50px;
-  margin-top: 30px;
-  }*/
 
 #gform {
   width: 90%;
@@ -307,95 +338,5 @@ button {
 
 .button-xlarge {
   margin-bottom: 30px;
-  width: 100%;
-}
-
-.team-title-content {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  position: absolute;
-
-}
-
-.team-scroll {
-  height: 100vh;
-  overflow-y: scroll;
-  display: block;
-}
-
-.team-content {
-  font-size: 2rem;
-  margin: auto;
-  text-align: center;
-  right: 0;
-  position: absolute;
-  display: inline-block;
-  width: 50%;
-  height: 100%;
-  background-color: white;
-}
-
-.team-member {
-  text-align: center;
-}
-
-.img-team {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin: 40px auto;
-}
-
-
-/* Style all font awesome icons */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-
-/* Add a hover effect if you want */
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-
-/* Linkedin */
-
-.fa-linkedin {
-  background: white;
-  color: #3B5998;
-}
-
-
-/* Github */
-
-.fa-github {
-  background: white;
-  color: black;
-}
-
-.button {
-  padding: 15px 25px;
-  font-size: 20px;
-  color: black;
-  background-color: #F35050;
-  border: 2px;
-  border-color: green;
-  border-radius: 15px;
-  /box-shadow: green;
-  /
+  width: 30%;
 }

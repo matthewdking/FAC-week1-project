@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/png" href="./images/fav-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Ba6e5</title>
 </head>
 
@@ -28,9 +28,9 @@
   </nav>
 </section>
 
-<section class="about" id="about">
-  <div id="about-title">
-    <div id="title-content">
+<section class="fullscreen-section" id="about">
+  <div class="fullscreen-left about-title" >
+    <div class="left-title-content">
       <h3>About</h3>
       <nav class="nav-container-about">
         <ul class="nav">
@@ -41,7 +41,7 @@
       </nav>
     </div>
   </div>
-  <div id="about-content">
+  <div class="fullscreen-right about-content">
     <div class='about-para'>
       <p>Hello we are Ba6e5 Developer group.</p>
       <p> We are a four person team: Katia , Matt , Heather , Sajeda.</p>
@@ -51,9 +51,9 @@
   </div>
 </section>
 
-<section class="team" id="team">
-  <div class="team-title">
-    <div class="team-title-content">
+<section class="fullscreen-section" id="team">
+  <div class="fullscreen-left team-title">
+    <div class="left-title-content">
       <h3>Team</h3>
       <nav class="nav-container-about">
         <ul class="nav">
@@ -64,7 +64,7 @@
       </nav>
     </div>
   </div>
-  <div class="team-content">
+  <div class="fullscreen-right">
     <div class="team-scroll">
       <div class="team-member">
         <img class="img-team" src="./images/Matt1.png" alt="Matt">
@@ -109,7 +109,7 @@
   </div>
 </section>
 
-<section class="form" id="contact">
+<section class="fullscreen-section" id="contact">
   <div class="form-title">
     <div class="form-title-content">
       <h3>Contact</h3>
@@ -124,7 +124,6 @@
   </div>
   <div class="form-content">
     <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbzqpori_RFrOVY0DPyrylDGt-5SRbDLFJM3P4tFz9GCB9-fdHo/exec">
-
       <div>
         <label for="name" class="name-label">Name: </label>
         <input id="name" name="name" required/>
@@ -144,13 +143,11 @@
         </button>
       </div>
     </form>
-
     <div style="display:none; background-color=red" id="thankyou_message">
       <h2 class="h2-div"><em>Thanks</em> for contacting me! I will get back to you soon!
       </h2>
     </div>
     <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
 </section>
 </body>
 </html>
